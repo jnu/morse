@@ -26,6 +26,23 @@ files = [
 ]
 
 [[package]]
+name = "editdistpy"
+version = "0.1.3"
+description = "Fast Levenshtein and Damerau optimal string alignment algorithms."
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "editdistpy-0.1.3-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7f951243c0f7074415849ca18d107891e98afe0f5381fb65bd39768633ab6748"},
+    {file = "editdistpy-0.1.3-cp36-cp36m-win_amd64.whl", hash = "sha256:4e7e1ac3c59d479f568e38729b022240cc46f5e6753ba1c023456314970bb149"},
+    {file = "editdistpy-0.1.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b747995aebe987a565cff0e56812bf08e4e4e9ba8b7f094804845d9e53b20533"},
+    {file = "editdistpy-0.1.3-cp37-cp37m-win_amd64.whl", hash = "sha256:a74fdc3becf0dc115d9f34cc45dcfa0e5154f5348f2b34ccc71026b064c22689"},
+    {file = "editdistpy-0.1.3-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:28f71c6343a996776f5691da19136a558593428ad6a10baab85795fa21a461ff"},
+    {file = "editdistpy-0.1.3-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:aa559312e07ff8835470d0d9b2f245aa2bc9c2d3370a6c5812508e6f0265a523"},
+    {file = "editdistpy-0.1.3-cp38-cp38-win_amd64.whl", hash = "sha256:7c00a540d17b998519b100a610acc1e1f2aa015b2b8dc268dcd62eeae4259916"},
+    {file = "editdistpy-0.1.3.tar.gz", hash = "sha256:b3cad07319d79fe8b3ba6bf92293de962932917d88e9c624df7b6a44bddf1dcc"},
+]
+
+[[package]]
 name = "english-words"
 version = "2.0.1"
 description = "Generate sets of english words by combining different word lists"
@@ -140,6 +157,17 @@ files = [
 ]
 
 [[package]]
+name = "pycountry"
+version = "23.12.11"
+description = "ISO country, subdivision, language, currency and script definitions and their translations"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "pycountry-23.12.11-py3-none-any.whl", hash = "sha256:2ff91cff4f40ff61086e773d61e72005fe95de4a57bfc765509db05695dc50ab"},
+    {file = "pycountry-23.12.11.tar.gz", hash = "sha256:00569d82eaefbc6a490a311bfa84a9c571cff9ddbf8b0a4f4e7b4f868b4ad925"},
+]
+
+[[package]]
 name = "regex"
 version = "2023.12.25"
 description = "Alternative regular expression module, to replace re."
@@ -242,6 +270,31 @@ files = [
 ]
 
 [[package]]
+name = "symspellpy"
+version = "6.7.7"
+description = "Python SymSpell"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "symspellpy-6.7.7-py3-none-any.whl", hash = "sha256:633ddfd9735aea65f792aa33233d9ec89685f1669c2394b24a9336c5282d5c4c"},
+    {file = "symspellpy-6.7.7.tar.gz", hash = "sha256:f6c315187780bc2dd30fc9ca32ef076f89bbfcb2a7b3f9a377926f1f6ade0085"},
+]
+
+[package.dependencies]
+editdistpy = ">=0.1.3"
+
+[[package]]
+name = "unidecode"
+version = "1.3.7"
+description = "ASCII transliterations of Unicode text"
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "Unidecode-1.3.7-py3-none-any.whl", hash = "sha256:663a537f506834ed836af26a81b210d90cbde044c47bfbdc0fbbc9f94c86a6e4"},
+    {file = "Unidecode-1.3.7.tar.gz", hash = "sha256:3c90b4662aa0de0cb591884b934ead8d2225f1800d8da675a7750cbc3bd94610"},
+]
+
+[[package]]
 name = "wcwidth"
 version = "0.2.13"
 description = "Measures the displayed width of unicode strings in a terminal"
@@ -289,4 +342,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "018b346e47412091be1481623702044ca16ccea558064b43cee609fcb0627e80"
+content-hash = "0a558ce9147248be5971c9029f7abb4d09be3e22821fda282ce5bb3c1832d981"
